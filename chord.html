@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitor</title>
+    <link rel="stylesheet" href="hp.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/7dca720b24.js"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="header">
+        <div class="hlab">
+            <img src="img/headerlogo1.png" alt="">
+        </div>
+        <div class="sbab">
+            <form id="search-form" action="sbar.html" method="GET">
+                    <input type="text" id="search-bar" name="chords" placeholder="Search for a chord or note" list="chord-list">           
+            <button type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+    <div class="slider-container">
+        <label for="note-slider">Select a note:</label>
+        <select id="note-slider">
+            <option value="C">C</option>
+            <option value="C#">C#</option>
+            <option value="D">D</option>
+            <option value="D#">D#</option>
+            <option value="E">E</option>
+            <option value="F">F</option>
+            <option value="F#">F#</option>
+            <option value="G">G</option>
+            <option value="G#">G#</option>
+            <option value="A">A</option>
+            <option value="A#">A#</option>
+            <option value="B">B</option>
+        </select>
+        
+    </div>
+    <div class="slider-container">
+        <label for="chord-slider">Select a chord:</label>
+        <select id="chord-slider">
+            <option value="Major">Major</option>
+            <option value="Minor">Minor</option>
+            <option value="7">7</option>
+            <option value="5">5</option>
+            <option value="dim">dim</option>
+            <option value="dim7">dim7</option>
+            <option value="aug">aug</option>
+            <option value="sus2">sus2</option>
+            <option value="sus4">sus4</option>
+            <option value="maj7">maj7</option>
+            <option value="m7">m7</option>
+            <option value="7sus4">7sus4</option>
+        </select>
+        
+    </div>
+    
+    <span id="selected-note"></span>&nbsp;<span id="selected-chord"></span>
+    <center>
+    <div id="image-container">
+        
+        <img src="" alt="" id="selected-image">
+    </div>
+    </center>
+    <nav class="sidebar">
+        <div class="menu_content">
+          <ul class="menu_items">
+            <div class="menu_title menu_dahsboard"></div>
+            <li class="item">
+              <a href="index.html" class="nav_link">
+                <span class="navlink_icon">
+                  <i class="fa fa-home"></i>
+                </span>
+                <span class="navlink">Home</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="ab.html" class="nav_link">
+                <span class="navlink_icon">
+                  <i class="fa fa-info-circle"></i>
+                </span>
+                <span class="navlink">About</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="chord.html" class="nav_link">
+                <span class="navlink_icon">
+                  <i class="fa-solid fa-music"></i>
+                </span>
+                <span class="navlink">Chords</span>
+              </a>
+            </li>
+            <li class="item">
+              <div class="nav_link submenu_item">
+                <span class="navlink_icon">
+                  <i class="fa-solid fa-headphones-simple"></i>
+                </span>
+                <span class="navlink">Songs</span>
+                <i id="arrow" class="bx bx-chevron-right arrow-left"></i>
+              </div>
+              <ul class="menu_items submenu">
+                <a href="song1.html" class="nav_link sublink">Bahay Kubo</a>
+                <a href="song2.html" class="nav_link sublink">Leron Leron Sinta</a>
+                <a href="song3.html" class="nav_link sublink">Paruparong Bukid</a>
+                <a href="song4.html" class="nav_link sublink">Sitsiritsit Alibangbang</a>
+              </ul>
+            </li>
+            <li class="item">
+              <a href="tnr.html" class="nav_link">
+                <span class="navlink_icon">
+                  <i class="fa-solid fa-guitar"></i>
+                </span>
+                <span class="navlink">Pitch Detector</span>
+              </a>
+            </li>
+          <div class="bottom_content">
+            <div class="bottom expand_sidebar">
+              <i class='bx bx-log-in' ></i>
+            </div>
+            <div class="bottom collapse_sidebar">
+              <i class='bx bx-log-out'></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <script src="hpsb.js"></script>
+      <script src="sbar.js"></script>
+</body>
+</html>
