@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitor</title>
+    <link rel="stylesheet" href="hp.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/7dca720b24.js"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+        <div class="hlab">
+            <img src="headerlogo1.png" alt="">
+        </div>
+        <div class="sbab">
+            <form id="search-form" action="sbar.html" method="GET">
+                    <input type="text" id="search-bar" name="chords" placeholder="Search for a chord or note" list="chord-list">           
+            <button type="submit">Search</button>
+            </form>
+        </div>
+        </div>
+        <div class="text">
+          <h1>About</h1>
+          <div class="txt">
+            <p>Welcome to guitor! It is a comprehensive platform dedicated to guitar enthusiasts of all levels. With a strong focus on guitar chords, pitch detection, and song lyrics with chords, our website is tailored specifically to enhance your guitar playing experience.</p></div>
+          <div class="txt1">
+            <p>Chords: Immerse yourself in the world of guitar chords with our extensive library. Discover a vast collection of chords ranging from basic major and minor chords to more advanced and intricate chord progressions. Our user-friendly interface makes it effortless to find the right chords for your favorite songs. Whether you're a beginner learning the basics or an experienced guitarist looking for fresh inspiration, our chord collection has everything you need to take your guitar playing to new heights.</p>
+            <img src="chord.jfif" alt="">
+          </div>
+          <div class="txt2">
+            <img src="pitch.jfif" alt="">
+            <p>Pitch Detector: Achieve perfect tuning with our precise pitch detection tool designed exclusively for guitarists. By simply playing a note, our advanced technology analyzes the sound and provides real-time feedback on its pitch accuracy. Whether you're tuning an acoustic, electric, or any other type of guitar, our pitch detection feature ensures that you achieve optimal tuning, resulting in a harmonious and accurate sound.</p>
+          </div>
+          <div class="txt1">
+            <p>Song Lyrics with Chords:
+              Expand your repertoire and play your favorite songs with confidence using our vast collection of song lyrics accompanied by guitar chords. Our comprehensive database covers various genres, artists, and popular hits. Each song is meticulously transcribed with chord diagrams and lyrics, enabling you to strum and sing along effortlessly. </p>
+            <img src="lyrics.jfif" alt="">
+          </div>  
+          
+        </div>
+        <nav class="sidebar">
+          <div class="menu_content">
+            <ul class="menu_items">
+              <div class="menu_title menu_dahsboard"></div>
+              <li class="item">
+                <a href="index.html" class="nav_link">
+                  <span class="navlink_icon">
+                    <i class="fa fa-home"></i>
+                  </span>
+                  <span class="navlink">Home</span>
+                </a>
+              </li>
+              <li class="item">
+                <a href="ab.html" class="nav_link">
+                  <span class="navlink_icon">
+                    <i class="fa fa-info-circle"></i>
+                  </span>
+                  <span class="navlink">About</span>
+                </a>
+              </li>
+              <li class="item">
+                <a href="chord.html" class="nav_link">
+                  <span class="navlink_icon">
+                    <i class="fa-solid fa-music"></i>
+                  </span>
+                  <span class="navlink">Chords</span>
+                </a>
+              </li>
+              <li class="item">
+                <div class="nav_link submenu_item">
+                  <span class="navlink_icon">
+                    <i class="fa-solid fa-headphones-simple"></i>
+                  </span>
+                  <span class="navlink">Songs</span>
+                  <i id="arrow" class="bx bx-chevron-right arrow-left"></i>
+                </div>
+                <ul class="menu_items submenu">
+                  <a href="song1.html" class="nav_link sublink">Bahay Kubo</a>
+                  <a href="song2.html" class="nav_link sublink">Leron Leron Sinta</a>
+                  <a href="song3.html" class="nav_link sublink">Paruparong Bukid</a>
+                  <a href="song4.html" class="nav_link sublink">Sitsiritsit Alibangbang</a>
+                </ul>
+              </li>
+              <li class="item">
+                <a href="tnr.html" class="nav_link">
+                  <span class="navlink_icon">
+                    <i class="fa-solid fa-guitar"></i>
+                  </span>
+                  <span class="navlink">Pitch Detector</span>
+                </a>
+              </li>
+            <div class="bottom_content">
+              <div class="bottom expand_sidebar">
+                <i class='bx bx-log-in' ></i>
+              </div>
+              <div class="bottom collapse_sidebar">
+                <i class='bx bx-log-out'></i>
+              </div>
+            </div>
+          </div>
+        </nav>
+    </div>
+    
+    
+    
+      <!-- JavaScript -->
+      <script src="hpsb.js"></script>
+      <script src="sbar.js"></script>
+    
+</body>
+</html>
