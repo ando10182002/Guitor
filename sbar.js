@@ -224,14 +224,23 @@ const imageMapping = {
       if (chords) {
           const trimmedChords = chords.trim().toLowerCase();
   
-          if (trimmedChords === 'tabs') {
-              window.location.href = '3.html'; // Redirect to tabs.html
+          if (trimmedChords === 'pitch detector') {
+              window.location.href = 'tnr.html'; // Redirect to tabs.html
               return;
-          } else if (trimmedChords === 'songs') {
-              window.location.href = '2.html'; // Redirect to songs.html
+          } else if (trimmedChords === 'chord') {
+              window.location.href = '.html'; // Redirect to songs.html
               return;
-          } else if (trimmedChords === 'tuner') {
-              window.location.href = '3.html';
+          } else if (trimmedChords === 'bahay kubo') {
+              window.location.href = 'song1.html';
+              return;
+          } else if (trimmedChords === 'leron leron sinta') {
+              window.location.href = 'song2.html';
+              return;
+          } else if (trimmedChords === 'paruparong bukid') {
+              window.location.href = 'song3.html';
+              return;
+          } else if (trimmedChords === 'sitsiritsit alibangbang') {
+              window.location.href = 'song4.html';
               return;
           }
   
