@@ -487,3 +487,9 @@ div.vague {
   background-color: white;
   color: #FF5F1F;
 }
+
+.nt{
+    color: white;
+    Display: flex;
+    Justify-content:center;
+}
